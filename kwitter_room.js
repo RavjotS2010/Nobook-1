@@ -1,15 +1,14 @@
 
 const firebaseConfig = {
-      apiKey: "AIzaSyAcQ6b7tM83tudDZVKCft51vf2jSkCdMkM",
-      authDomain: "kwitter-4f91f.firebaseapp.com",
-      databaseURL: "https://kwitter-4f91f-default-rtdb.firebaseio.com",
-      projectId: "kwitter-4f91f",
-      storageBucket: "kwitter-4f91f.appspot.com",
-      messagingSenderId: "34014066026",
-      appId: "1:34014066026:web:838a2a2df637c2df06e113",
-      measurementId: "G-CCWFBJF3CX"
+      apiKey: "AIzaSyBhvKFbzyRgy6-Q77WHwSp8CxfLe8Yxlio",
+      authDomain: "nobook-97074.firebaseapp.com",
+      databaseURL: "https://nobook-97074-default-rtdb.firebaseio.com",
+      projectId: "nobook-97074",
+      storageBucket: "nobook-97074.appspot.com",
+      messagingSenderId: "471922495051",
+      appId: "1:471922495051:web:070773f2fb731bfc8707ce",
+      measurementId: "G-2T8Z9RN0D0"
     };
-    
      firebase.initializeApp(firebaseConfig);
 
 function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
